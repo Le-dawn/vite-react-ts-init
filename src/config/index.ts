@@ -2,8 +2,8 @@
 
 export let apiPrefix = ''
 
-if (process.env.NEXT_PUBLIC_API_PREFIX) {
-  apiPrefix = process.env.NEXT_PUBLIC_API_PREFIX
+if (import.meta.env.VITE_API_PREFIX) {
+  apiPrefix = import.meta.env.VITE_API_PREFIX
 }
 else if (
   globalThis.document?.body?.getAttribute('data-api-prefix')
