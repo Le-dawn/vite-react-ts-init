@@ -1,7 +1,7 @@
 'use client';
 
 import { Dialog, DialogPanel, DialogTitle, Description } from '@headlessui/react';
-import { RiCloseLine } from '@remixicon/react';
+import { X } from 'lucide-react';
 import { noop } from 'lodash-es';
 import { cn } from '@/lib/utils';
 
@@ -77,7 +77,7 @@ const Modal: React.FC<ModalProps> = ({
                 )}
                 aria-label="关闭弹窗"
               >
-                <RiCloseLine className="h-5 w-5" />
+                <X className="h-5 w-5" />
               </button>
             )}
 
